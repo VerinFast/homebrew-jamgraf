@@ -24,7 +24,7 @@ cask "waikiki" do
   # The build is arm64-only. Without this an Intel user installs cleanly and gets
   # an app that cannot launch; with it they get told why.
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Waikiki.app"
 
