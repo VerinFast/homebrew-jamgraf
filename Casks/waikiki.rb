@@ -1,6 +1,6 @@
 cask "waikiki" do
-  version "1.0.2"
-  sha256 "50189f70cda90135cbce2778fd9c9b7dc195c5676cb08145531572bb7a289b3d"
+  version "1.0.3"
+  sha256 "57fda3f26274e711795844d02a998f3e733daf423e0dc0f9daa565c23329f8ad"
 
   url "https://github.com/VerinFast/waikiki/releases/download/v#{version}/Waikiki-macos.zip",
       verified: "github.com/VerinFast/waikiki/"
