@@ -8,10 +8,15 @@ brew tap verinfast/jamgraf
 brew install --cask jamgraf
 ```
 
-**Already installed as Waikiki?** Nothing to do. This tap used to be
-`verinfast/homebrew-waikiki`. GitHub redirects the old name, and
-`cask_renames.json` maps the `waikiki` cask to `jamgraf`, so `brew update` moves
-an existing install across.
+**Already installed as Waikiki?** This tap used to be `verinfast/homebrew-waikiki`, and GitHub redirects the old name. Three commands move an existing install across (tested on Homebrew 7.0.10):
+
+```sh
+brew update                     # follows the redirect: verinfast/waikiki becomes verinfast/jamgraf
+brew trust verinfast/jamgraf    # Homebrew drops trust when a tap is renamed, so trust it again
+brew migrate --cask waikiki     # renames the installed cask to jamgraf
+```
+
+Homebrew prints the `brew trust` line itself the first time it refuses the cask. Skipping `brew migrate` is harmless: the app updates itself either way, and `brew list` just warns that `waikiki` was renamed.
 
 Jamgraf is not notarized yet, so macOS blocks the first launch. After the first
 attempt, open **System Settings → Privacy & Security** and click **Open Anyway**,
