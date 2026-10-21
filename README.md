@@ -5,6 +5,7 @@ Waikiki), a small local wiki for a human and an LLM to edit the same page.
 
 ```sh
 brew tap verinfast/jamgraf
+brew trust verinfast/jamgraf   # Homebrew >= 7.0.10 refuses third-party taps until trusted
 brew install --cask jamgraf
 ```
 
