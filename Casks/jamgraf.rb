@@ -1,6 +1,6 @@
 cask "jamgraf" do
-  version "1.1.0"
-  sha256 "39a19a98dcd0a7cb6fc15325d5a4b275854998c18f3c6e43f7275a1cb3ba158d"
+  version "1.2.0"
+  sha256 "62e81e52ed599ef9d26a2b703d86976acf91cf45e96cbbfa9e2db8774f973c9f"
 
   url "https://github.com/VerinFast/jamgraf/releases/download/v#{version}/Jamgraf-macos.zip"
   name "Jamgraf"
